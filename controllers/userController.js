@@ -19,7 +19,7 @@ exports.createUser = async(req,res,next)=>{
 
 exports.getAllUsers = async(req,res,next)=>{
     try{
-        const userList = await UserN.find();
+        const userList = await UserD.find();
         res.status(200).json({
             status :"success",
             count : userList.length,
